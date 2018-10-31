@@ -6,7 +6,7 @@
 # catalog-version 1.00
 Name:		texlive-uiucredborder
 Version:	1.00
-Release:	9
+Release:	10
 Summary:	Class for UIUC thesis red-bordered forms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uiucredborder
