@@ -1,19 +1,13 @@
-# revision 29974
-# category Package
-# catalog-ctan /macros/latex/contrib/uiucredborder
-# catalog-date 2013-04-16 11:30:34 +0200
-# catalog-license lppl1.2
-# catalog-version 1.00
 Name:		texlive-uiucredborder
-Version:	1.00
-Release:	10
+Version:	29974
+Release:	1
 Summary:	Class for UIUC thesis red-bordered forms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uiucredborder
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uiucredborder.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uiucredborder.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uiucredborder.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uiucredborder.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uiucredborder.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uiucredborder.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ that gets signed by the department head, your advisor, and --
 for doctoral dissertations -- your thesis committee members.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,7 +36,8 @@ for doctoral dissertations -- your thesis committee members.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
