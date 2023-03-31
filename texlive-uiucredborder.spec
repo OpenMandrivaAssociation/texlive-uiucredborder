@@ -1,6 +1,6 @@
 Name:		texlive-uiucredborder
 Version:	29974
-Release:	1
+Release:	2
 Summary:	Class for UIUC thesis red-bordered forms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uiucredborder
