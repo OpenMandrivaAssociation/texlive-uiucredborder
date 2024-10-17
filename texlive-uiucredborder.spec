@@ -3,7 +3,7 @@ Version:	29974
 Release:	2
 Summary:	Class for UIUC thesis red-bordered forms
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/uiucredborder
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/uiucredborder
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uiucredborder.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uiucredborder.doc.r%{version}.tar.xz
